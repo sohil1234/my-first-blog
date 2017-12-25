@@ -1,0 +1,34 @@
+<!-- Authored in HTML Developer Kit --><!DOCTYPE html>
+<html>
+<head><meta charset='UTF-8'><title>Homepage</title></head>
+<body>
+<h4>Welcome to the Mysite</h4>
+<h3><p align="center">Homepage</p></h3>
+<left>
+<h2> Sample codes for Python </h2>
+<font size = "5" >
+<b><u> Code for value of pie till 10,000 decimal places</b></u>:
+def make_pi():<br>
+    q, r, t, k, m, x = 1, 0, 1, 1, 3, 3<br>
+    for j in range(1000):<br>
+        if 4 * q + r - t < m * t:<br>
+            yield m<br>
+            q, r, t, k, m, x = 10*q, 10*(r-m*t), t, k, (10*(3*q+r))//t - 10*m, x<br>
+        else:<br>
+            q, r, t, k, m, x = q*k, (2*q+r)*x, t*x, k+1, (q*(7*k+2)+r*x)//(t*x), x+2<br>
+<br>
+<br>
+digits = make_pi()<br>
+pi_list = []<br>
+my_array = []<br>
+
+for i in make_pi():<br>
+    my_array.append(str(i))<br>
+
+my_array = my_array[:1] + ['.'] + my_array[1:]<br>
+big_string = "".join(my_array)<br>
+print "here is a big string:\n %s" % big_string<br></font> 
+<h5> Other codes next week</h5>
+</left>
+</body>
+</html>
